@@ -61,8 +61,10 @@
 * Only supports Klipper at the present.
 
 ## Pinout
-* [EBB36 CAN V1.1](./EBB%20CAN%20V1.1%20(STM32G0B1)/EBB36%20CAN%20V1.1/Hardware/BIGTREETECH%20EBB36%20CAN%20V1.1-PIN.pdf)
-* [EBB42 CAN V1.1](./EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/BIGTREETECH%20EBB42%20CAN%20V1.1-PIN.pdf)
+* EBB36 CAN V1.1
+  <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB36%20CAN%20V1.1/Hardware/EBB36%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
+* EBB42 CAN V1.1
+  <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
 1. Precompiled firmware(The source code version used is [Commits on May 18, 2022](https://github.com/Klipper3d/klipper/commit/996b73e25d00c5aa5d740b8f2d53c78ef9919401))
@@ -91,8 +93,16 @@
 ## board.cfg files
    * [sample-bigtreetech-ebb-canbus-v1.1.cfg](./EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.1.cfg) includes all the correct pinout for EBB CAN 36&42 V1.1
 
+
+# EBB36 & 42 CAN V1.2
+__V1.2 compared with v1.1: only the IO of hotend is changed from `PA2` to `PB13`__
+
+## board.cfg files
+   * [sample-bigtreetech-ebb-canbus-v1.2.cfg](./EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg) includes all the correct pinout for EBB CAN 36&42 V1.2
+
 ## Firmware update
 ### Warning: <br/>
+(Only for EBB 36/42 CAN V1.1)<br/>
 __STM32G0B1CB needs to jump to the System memory area to run bootloader (written by STMicroelectronics) when using DFU to update firmware through the Type-C port. Referring to the description in manual [AN2606](https://www.st.com/content/ccc/resource/technical/document/application_note/b9/9b/16/3a/12/1e/40/0c/CD00167594.pdf/files/CD00167594.pdf/jcr:content/translations/en.CD00167594.pdf), The initialization process of this bootloader is shown in the following figure:__
   <br/><img src=Images/AN2606.png width="800" /><br/>
 __The IO of USART will be configured before going to the USB DFU mode.__<br/>

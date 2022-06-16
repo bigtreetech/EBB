@@ -61,8 +61,10 @@
 * 此产品当前仅支持 Klipper 固件
 
 ## Pin 脚说明
-* [EBB36 CAN V1.1](./EBB%20CAN%20V1.1%20(STM32G0B1)/EBB36%20CAN%20V1.1/Hardware/BIGTREETECH%20EBB36%20CAN%20V1.1-PIN.pdf)
-* [EBB42 CAN V1.1](./EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/BIGTREETECH%20EBB42%20CAN%20V1.1-PIN.pdf)
+* EBB36 CAN V1.1
+  <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB36%20CAN%20V1.1/Hardware/EBB36%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
+* EBB42 CAN V1.1
+  <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 
 ## 编译固件
 1. 已编译好直接使用的文件(此二进制文件所使用的源码是 [Commits on May 18, 2022](https://github.com/Klipper3d/klipper/commit/996b73e25d00c5aa5d740b8f2d53c78ef9919401))
@@ -92,9 +94,15 @@
 ## 配置文件
    * [sample-bigtreetech-ebb-canbus-v1.1.cfg](./EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.1.cfg) 提供了 EBB CAN 36&42 V1.1 的所有 pinout 配置
 
+# EBB36 & 42 CAN V1.2
+__V1.2 在 v1.1 基础上: 只把加热棒的 IO 从 `PA2` 修改为 `PB13`__
+
+## 配置文件
+   * [sample-bigtreetech-ebb-canbus-v1.2.cfg](./EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg) 提供了 EBB CAN 36&42 V1.2 的所有 pinout 配置
 
 ## 固件更新
 ### 注意：<br/>
+(只有 EBB 36/42 CAN V1.1 需要注意此问题)<br/>
 __通过Type-C端口使用DFU更新固件时，STM32G0B1CB需要跳转到System memory区域执行Bootloader程序(STMicroelectronics出厂写死的)__<br/>
 __参考手册[AN2606](https://www.st.com/content/ccc/resource/technical/document/application_note/b9/9b/16/3a/12/1e/40/0c/CD00167594.pdf/files/CD00167594.pdf/jcr:content/translations/en.CD00167594.pdf)中的描述，此Bootloader的初始化流程如下图所示：__
   <br/><img src=Images/AN2606.png width="800" /><br/>
