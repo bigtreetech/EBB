@@ -26,7 +26,7 @@
   <br/><img src=EBB%20CAN%20V1.0%20(STM32F072)/EBB42%20CAN%20V1.0/Hardware/EBB42%20CAN%20V1.0-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
-1. Precompiled firmware(The source code version used is [Commits on May 18, 2022](https://github.com/Klipper3d/klipper/commit/996b73e25d00c5aa5d740b8f2d53c78ef9919401))
+1. Precompiled firmware(The source code version used is [Commits on Aug 25, 2022](https://github.com/Klipper3d/klipper/commit/f7e29b276e5c2454eaa801e78cf3f6aff29c4ba9))
    * [firmware_USB.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_USB.bin) Use USB to communicate with raspberry pi.
    * [firmware_canbus.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi, baudrate = 250K.
 

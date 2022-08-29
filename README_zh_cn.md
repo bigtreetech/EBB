@@ -26,7 +26,7 @@
   <br/><img src=EBB%20CAN%20V1.0%20(STM32F072)/EBB42%20CAN%20V1.0/Hardware/EBB42%20CAN%20V1.0-PIN.png width="800" /><br/>
 
 ## 编译固件
-1. 已编译好直接使用的文件(此二进制文件所使用的源码是 [Commits on May 18, 2022](https://github.com/Klipper3d/klipper/commit/996b73e25d00c5aa5d740b8f2d53c78ef9919401))
+1. 已编译好直接使用的文件(此二进制文件所使用的源码是 [Commits on Aug 25, 2022](https://github.com/Klipper3d/klipper/commit/f7e29b276e5c2454eaa801e78cf3f6aff29c4ba9))
    * [firmware_USB.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_USB.bin) 使用 USB 与树莓派通信。
    * [firmware_canbus.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_canbus.bin) 使用 CAN 总线与树莓派通信, 波特率250K。
 
