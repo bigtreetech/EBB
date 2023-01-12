@@ -142,7 +142,7 @@ __V1.2 在 v1.1 基础上: 只把加热棒的 IO 从 `PA2` 修改为 `PB13`__
 1. 已编译好直接使用的文件(此二进制文件所使用的源码是 [Commits on Jan 8, 2023](https://github.com/Klipper3d/klipper/commit/bca2671efb8ae6035bb8600619b7a7c4e76169c3))
    * [firmware_USB.bin](./EBB%20SB2240_2209%20CAN/firmware_USB.bin) 使用 USB 与主机通信。
    * [firmware_canbus.bin](./EBB%20SB2240_2209%20CAN/firmware_canbus.bin)  使用 CAN 总线与主机通信, 波特率 1M。
-   * [firmware_canbus.bin](./EBB%20SB2240_2209%20CAN/firmware_canbus_8k_bootloader.bin) 使用 CAN 总线与主机通信, 波特率 1M，8KB 偏移量使用 Canboot 时用
+   * [firmware_canbus_8k_bootloader.bin](./EBB%20SB2240_2209%20CAN/firmware_canbus_8k_bootloader.bin) 使用 CAN 总线与主机通信, 波特率 1M，8KB 偏移量使用 Canboot 时用
 
 3. 自行编译最新版本的固件<br/>
    1. 参考 [klipper官方的安装说明](https://www.klipper3d.org/Installation.html) 下载klipper源码到主机

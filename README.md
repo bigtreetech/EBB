@@ -140,7 +140,7 @@ __V1.2 compared with v1.1: only the IO of hotend is changed from `PA2` to `PB13`
 1. Precompiled firmware(The source code version used is [Commits on Jan 8, 2023](https://github.com/Klipper3d/klipper/commit/bca2671efb8ae6035bb8600619b7a7c4e76169c3))
    * [firmware_USB.bin](./EBB%20SB2240_2209%20CAN/firmware_USB.bin) Use USB to communicate with host.
    * [firmware_canbus.bin](./EBB%20SB2240_2209%20CAN/firmware_canbus.bin) Use CAN bus to communicate with host, baudrate = 1M.
-   * [firmware_canbus.bin](./EBB%20SB2240_2209%20CAN/firmware_canbus_8k_bootloader.bin) Use CAN bus to communicate with host, baudrate = 1M, 8KB bootloader for Canboot.
+   * [firmware_canbus_8k_bootloader.bin](./EBB%20SB2240_2209%20CAN/firmware_canbus_8k_bootloader.bin) Use CAN bus to communicate with host, baudrate = 1M, 8KB bootloader for Canboot.
 
 3. Build your own firmware<br/>
    1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to host
