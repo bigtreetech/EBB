@@ -193,6 +193,7 @@ __V1.2 compared with v1.1: only the IO of hotend is changed from `PA2` to `PB13`
       spi_software_sclk_pin: EBBCan: PB10
       spi_software_mosi_pin: EBBCan: PB11
       spi_software_miso_pin: EBBCan: PB2
+      driver_TPFD: 0
       run_current: 0.650
       stealthchop_threshold: 999999
       ```

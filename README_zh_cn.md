@@ -195,6 +195,7 @@ __V1.2 在 v1.1 基础上: 只把加热棒的 IO 从 `PA2` 修改为 `PB13`__
       spi_software_sclk_pin: EBBCan: PB10
       spi_software_mosi_pin: EBBCan: PB11
       spi_software_miso_pin: EBBCan: PB2
+      driver_TPFD: 0
       run_current: 0.650
       stealthchop_threshold: 999999
       ```
