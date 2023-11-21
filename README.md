@@ -26,9 +26,9 @@
   <br/><img src=EBB%20CAN%20V1.0%20(STM32F072)/EBB42%20CAN%20V1.0/Hardware/EBB42%20CAN%20V1.0-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
-1. Precompiled firmware(The source code version used is [Commits on Aug 25, 2022](https://github.com/Klipper3d/klipper/commit/f7e29b276e5c2454eaa801e78cf3f6aff29c4ba9))
-   * [firmware_USB.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_USB.bin) Use USB to communicate with raspberry pi.
-   * [firmware_canbus.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi, baudrate = 250K.
+1. Precompiled firmware(The source code version used is [Commits on Nov 20, 2023](https://github.com/Klipper3d/klipper/commit/bb4711c5d31e8159945f945c662e6668059a174f))
+   * [firmware_USB.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_USB.bin) Use USB to communicate with raspberry pi / BTT Pi.
+   * [firmware_canbus.bin](./EBB%20CAN%20V1.0%20(STM32F072)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi / BTT Pi, baudrate = 1000K.
 
 3. Build your own firmware<br/>
    1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to raspberry pi
@@ -36,12 +36,16 @@
       * [*] Enable extra low-level configuration options
       * Micro-controller Architecture = `STMicroelectronics STM32`
       * Processor model = `STM32F072`
-      * Bootloader offset = `No bootloader`
+      * IF USE CanBoot
+         * Bootloader offset = `8KiB bootloader`
+      * ELSE
+         * Bootloader offset = `No bootloader`
       * Clock Reference = `8 MHz crystal`
       * IF USE USB
          * Communication interface = `USB (on PA11/PA12)`
       * ElSE IF USE CAN bus
          * Communication interface = `CAN bus (on PB8/PB9)`
+         * `(1000000)` CAN bus speed
 
       <img src=Images/ebb_v10_menuconfig.png width="800" /><br/>
    3. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
@@ -67,9 +71,9 @@
   <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
-1. Precompiled firmware(The source code version used is [Commits on May 18, 2022](https://github.com/Klipper3d/klipper/commit/996b73e25d00c5aa5d740b8f2d53c78ef9919401))
+1. Precompiled firmware(The source code version used is [Commits on Nov 20, 2023](https://github.com/Klipper3d/klipper/commit/bb4711c5d31e8159945f945c662e6668059a174f))
    * [firmware_USB.bin](./EBB%20CAN%20V1.1%20(STM32G0B1)/firmware_USB.bin) Use USB to communicate with raspberry pi.
-   * [firmware_canbus.bin](./EBB%20CAN%20V1.1%20(STM32G0B1)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi, baudrate = 250K.
+   * [firmware_canbus.bin](./EBB%20CAN%20V1.1%20(STM32G0B1)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi, baudrate = 1000K.
 
 3. Build your own firmware<br/>
    1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to raspberry pi
@@ -77,12 +81,16 @@
       * [*] Enable extra low-level configuration options
       * Micro-controller Architecture = `STMicroelectronics STM32`
       * Processor model = `STM32G0B1`
-      * Bootloader offset = `No bootloader`
+      * IF USE CanBoot
+         * Bootloader offset = `8KiB bootloader`
+      * ELSE
+         * Bootloader offset = `No bootloader`
       * Clock Reference = `8 MHz crystal`
       * IF USE USB
          * Communication interface = `USB (on PA11/PA12)`
       * ElSE IF USE CAN bus
          * Communication interface = `CAN bus (on PB0/PB1)`
+         * `(1000000)` CAN bus speed
 
       <img src=Images/ebb_v11_menuconfig.png width="800" /><br/>
    3. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
