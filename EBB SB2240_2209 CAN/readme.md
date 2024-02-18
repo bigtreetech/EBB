@@ -2,13 +2,13 @@
 * 优化开槽，修正与现有版本CAN线插头外形差异的问题，使其更加贴合可靠。
 * The slot is optimized to fit the existing CAN cable connector better, improving reliability.
 
-### Cable_Cover_For_PCB V1.2		
-* 与V1.1并存，V1.2不再兼容原版main_body而是需要与配套的main_body_EBB_SB使用。
-* Coexists with V1.1, but V1.2 is no longer compatible with the original main_body. Instead, it needs to be used with the corresponding main_body_EBB_SB.
+### Cable_Cover_EBB	
+* Cable_Cover_EBB不兼容Voron官方原版Main_Body，需要与本仓库提供的Main_Body_EBB搭配使用。
+* Cable_Cover_EBB is no longer compatible with the Voron original main_body. It needs to be used with the corresponding Main_Body_EBB in this repo.
 
-### main_body_EBB			
-* 新增的打印件，兼容除cable cover之外的所有原版StealthBurner打印件。
-* Added main_body_EBB，Compatible with all original StealthBurner printed parts except for the cable cover.
+### Main_Body_EBB		
+* Main_Body_EBB是本仓库新增打印件，与本仓库提供的Cable_Cover_EBB搭配使用，兼容除cable cover之外的所有原版StealthBurner打印件，
+* Main_body_EBB need to be used with Main_Body_EBB. Compatible with all original StealthBurner printed parts except for the cable cover.
 
 ### Printed Part for USB-C Cable		
 * 因Type-C接头并非标配，需要用户自行调整该打印件以适配其Type-C接头尺寸。
