@@ -66,14 +66,14 @@
 
 ## Pinout
 * EBB36 CAN V1.1 and V1.2
-  <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB36%20CAN%20V1.1/Hardware/EBB36%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
+  <br/><img src=EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/EBB36%20CAN%20V1.1%20and%20V1.2/Hardware/EBB36%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 * EBB42 CAN V1.1 and V1.2
-  <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
+  <br/><img src=EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/EBB42%20CAN%20V1.1%20and%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
 1. Precompiled firmware(The source code version used is [Commits on Nov 20, 2023](https://github.com/Klipper3d/klipper/commit/bb4711c5d31e8159945f945c662e6668059a174f))
-   * [firmware_USB.bin](./EBB%20CAN%20V1.1%20(STM32G0B1)/firmware_USB.bin) Use USB to communicate with raspberry pi.
-   * [firmware_canbus.bin](./EBB%20CAN%20V1.1%20(STM32G0B1)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi, baudrate = 1000K.
+   * [firmware_USB.bin](./EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/firmware_USB.bin) Use USB to communicate with raspberry pi.
+   * [firmware_canbus.bin](./EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/firmware_canbus.bin) Use CAN bus to communicate with raspberry pi, baudrate = 1000K.
 
 3. Build your own firmware<br/>
    1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to raspberry pi
@@ -107,13 +107,13 @@ __After going to DFU mode, PA2 will be configured to output high level by bootlo
   <br/><img src=Images/G0B1_DS.png width="800" /><br/>
 __PA2 is used for the hotend MOSFET in EBB36 & 42 CAN V1.1, The high level in the DFU mode change the hotend into heating state. Therefore, please pay attention to disconnect the main power VIN of the hotend when using the DFU of Type-C port to update the firmware, or ensure that the firmware update is completed soon and goto the normal working mode. Never keep MCU in DFU mode for a long time when the main power supply and hotend are connected.__
 ## board.cfg files
-   * [sample-bigtreetech-ebb-canbus-v1.1.cfg](./EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.1.cfg) includes all the correct pinout for EBB CAN 36&42 V1.1
+   * [sample-bigtreetech-ebb-canbus-v1.1.cfg](./EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.1.cfg) includes all the correct pinout for EBB CAN 36&42 V1.1
 
 # EBB36 & 42 CAN V1.2
 __V1.2 compared with v1.1: only the IO of hotend is changed from `PA2` to `PB13`__
 
 ## board.cfg files
-   * [sample-bigtreetech-ebb-canbus-v1.2.cfg](./EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg) includes all the correct pinout for EBB CAN 36&42 V1.2
+   * [sample-bigtreetech-ebb-canbus-v1.2.cfg](./EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg) includes all the correct pinout for EBB CAN 36&42 V1.2
 
 # EBB SB2240_2209 CAN V1.0
 ## Hardware
