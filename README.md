@@ -56,7 +56,7 @@
    * [sample-bigtreetech-ebb-canbus-v1.0.cfg](./EBB%20CAN%20V1.0%20(STM32F072)/sample-bigtreetech-ebb-canbus-v1.0.cfg) includes all the correct pinout for EBB36 & 42 CAN V1.0
 
 
-# EBB36 & 42 CAN V1.1
+# EBB36 & 42 CAN V1.1 and V1.2
 ## Hardware
 * MCU: ARM Cortex-M0+ STM32G0B1CBT6 64MHz whit FDCAN bus
 * All other parameters are the same as EBB36 & 42 CAN V1.0
@@ -65,9 +65,9 @@
 * Only supports Klipper at the present.
 
 ## Pinout
-* EBB36 CAN V1.1
+* EBB36 CAN V1.1 and V1.2
   <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB36%20CAN%20V1.1/Hardware/EBB36%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
-* EBB42 CAN V1.1
+* EBB42 CAN V1.1 and V1.2
   <br/><img src=EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
