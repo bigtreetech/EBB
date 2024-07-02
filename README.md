@@ -68,7 +68,7 @@
 * EBB36 CAN V1.1 and V1.2
   <br/><img src=EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/EBB36%20CAN%20V1.1%20and%20V1.2/Hardware/EBB36%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 * EBB42 CAN V1.1 and V1.2
-  <br/><img src=EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/EBB42%20CAN%20V1.1%20and%20V1.1/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
+  <br/><img src=EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1)/EBB42%20CAN%20V1.1%20and%20V1.2/Hardware/EBB42%20CAN%20V1.1&V1.2-PIN.png width="800" /><br/>
 
 ## Build Firmware Image
 1. Precompiled firmware(The source code version used is [Commits on Nov 20, 2023](https://github.com/Klipper3d/klipper/commit/bb4711c5d31e8159945f945c662e6668059a174f))
