@@ -9,11 +9,3 @@
 * **Main_Body_EBB-SB-USB和Cable_Cover_EBB-SB-USB打印件：** EBB SB2209 USB产品安装必须同时使用此两打印件，方可兼容装配至VORON Stealthburner其他原版打印件上，同时亦EBB SB CAN产品安装所需打印件。如单独使用将存在干涉问题，请同时下载此两打印件使用。
 * **Cable_Cover_EBB-SB-USB打印件：** EBB SB2209 USB产品安装必须使用该打印件，如使用VORON Stelthbunner上原版的Cable_Cover可能会有无法完全闭合的情况。
 
-### 如何固定XT30 Cable
-* STEP1
-
-<img src=IMG/Dingtalk_20240725153147.jpg width="600"/>
-
-* STEP 2
-
-
