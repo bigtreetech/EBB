@@ -12,7 +12,7 @@
 ### 如何固定XT30 Cable
 * STEP1
 
-<img src=img/Dingtalk_20240725153147.jpg width="600"/>
+<img src=IMG/Dingtalk_20240725153147.jpg width="600"/>
 
 * STEP 2
 
