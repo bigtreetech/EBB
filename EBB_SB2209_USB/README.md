@@ -13,7 +13,7 @@ To ensure the full functionality and stability of the product, when using the EB
 ### How to Fix the XT30 Cable
 * STEP 1
 
-<img src=img/Dingtalk_20240725153147.jpg width="600"/>
+<img src=IMG/Dingtalk_20240725153147.jpg width="600"/>
 
 * STEP 2
 
