@@ -1,4 +1,5 @@
 # [View English version](./README.md)
+# [日本語版を見る](./README_ja_jp.md)
 
 # EBB36 & 42 CAN V1.0
 ## 硬件参数
