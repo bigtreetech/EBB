@@ -183,9 +183,7 @@ __V1.2 compared with v1.1: only the IO of hotend is changed from `PA2` to `PB13`
 
       # [tmc2240 extruder]
       # cs_pin: EBBCan: PA15
-      # spi_software_sclk_pin: EBBCan: PB10
-      # spi_software_mosi_pin: EBBCan: PB11
-      # spi_software_miso_pin: EBBCan: PB2
+      # spi_bus: spi2_PB2_PB11_PB10
       # run_current: 0.650
       # stealthchop_threshold: 999999
       ```
@@ -198,9 +196,7 @@ __V1.2 compared with v1.1: only the IO of hotend is changed from `PA2` to `PB13`
 
       [tmc2240 extruder]
       cs_pin: EBBCan: PA15
-      spi_software_sclk_pin: EBBCan: PB10
-      spi_software_mosi_pin: EBBCan: PB11
-      spi_software_miso_pin: EBBCan: PB2
+      # spi_bus: spi2_PB2_PB11_PB10
       driver_TPFD: 0
       run_current: 0.650
       stealthchop_threshold: 999999
